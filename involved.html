@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroHope</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    .hero {
+      background-image: url('images/4.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0% 45%;
+      animation: backgroundMoveHorizontal 30s linear infinite;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <div class="hero min-h-screen text-white">
+    <header class="relative z-10 bg-indigo-900 bg-opacity-70 p-4">
+      <div class="w-full max-w-screen-xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold drop-shadow-lg">NeuroHope</h1>
+        <nav class="text-sm">
+          <a href="index.html" class="mx-2 hover:underline drop-shadow-lg">Home</a>
+          <a href="about.html" class="mx-2 hover:underline drop-shadow-lg">About</a>
+          <a href="research.html" class="mx-2 hover:underline drop-shadow-lg">Research</a>
+          <a href="involved.html" class="mx-2 hover:underline drop-shadow-lg">Get Involved</a>
+          <a href="donate.html" class="mx-2 hover:underline drop-shadow-lg">Donate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="relative z-10 flex-grow">
+      <div class="max-w-screen-xl mx-auto px-6 py-24 text-center">
+         <h2 class="text-4xl font-bold mb-6">Get Involved</h2>
+        <p class="text-lg max-w-2xl mx-auto mb-6">
+          Join our mission to raise awareness and make a real impact. There are so many ways for students and youth to get involved in neuroscience advocacy and education.
+        </p>
+        <ul class="text-left list-disc list-inside max-w-xl mx-auto text-white">
+          <li><strong>Volunteer:</strong> Help organize events, workshops, or fundraisers</li>
+          <li><strong>Student Ambassador Program:</strong> Represent NeuroHope at your school</li>
+          <li><strong>Join a Project:</strong> Participate in simplified research or outreach teams</li>
+          <li><strong>Submit Content:</strong> Share blogs, stories, or research summaries</li>
+          <li><strong>Interest Form:</strong> <a href="https://forms.gle/your-google-form" target="_blank" class="underline text-blue-300">Fill out the form here</a></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <footer class="bg-indigo-900 bg-opacity-70 text-white text-center p-4 drop-shadow-lg">
+    &copy; 2025 NeuroHope | Student-Led for a Brighter Future
+  </footer>
+
+</body>
+</html>

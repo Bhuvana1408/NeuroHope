@@ -18,9 +18,9 @@
     .hero {
       background-image: url('images/1.jpeg');
       background-repeat: repeat-x;
-      background-size: auto;
+      background-size: cover;
       background-position: 0% 45%;
-      animation: backgroundMoveHorizontal 30s linear infinite;
+      animation: backgroundMoveHorizontal 60s linear infinite;
       position: relative;
     }
 
@@ -42,7 +42,7 @@
     <header class="relative z-10 bg-indigo-900 bg-opacity-70 p-4">
       <div class="w-full max-w-screen-xl mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold drop-shadow-lg">NeuroHope</h1>
-        <nav class="text-sm">
+        <nav class="flex flex-wrap justify-center sm:justify-end space-x-2 sm:space-x-4 text-sm mt-2 sm:mt-0">
           <a href="index.html" class="mx-2 hover:underline drop-shadow-lg">Home</a>
           <a href="about.html" class="mx-2 hover:underline drop-shadow-lg">About</a>
           <a href="research.html" class="mx-2 hover:underline drop-shadow-lg">Research</a>
